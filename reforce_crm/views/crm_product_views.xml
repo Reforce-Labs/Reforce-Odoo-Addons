@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- List View for Products -->
+    <record id="view_tree_crm_product" model="ir.ui.view">
+        <field name="name">crm.product.tree</field>
+        <field name="model">crm.product</field>
+        <field name="type">list</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="list_price" widget="monetary"/>
+                <field name="url" widget="url"/>
+                <field name="strengths"/>
+                <field name="weaknesses"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View for Products -->
+    <record id="view_form_crm_product" model="ir.ui.view">
+        <field name="name">crm.product.form</field>
+        <field name="model">crm.product</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="list_price" widget="monetary"/>
+                            <field name="url" widget="url"/>
+                        </group>
+                        <group>
+                            <field name="strengths"/>
+                            <field name="weaknesses"/>
+                            <field name="notes"/>
+                        </group>
+                    </group>
+                    <field name="description" placeholder="Add a description..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo> 

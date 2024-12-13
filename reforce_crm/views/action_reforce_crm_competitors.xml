@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="action_reforce_crm_competitors" model="ir.actions.act_window">
+        <field name="name">Competitors</field>
+        <field name="res_model">crm.competitor</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="view_id" ref="view_kanban_crm_competitors"/>
+    </record>
+</odoo>
