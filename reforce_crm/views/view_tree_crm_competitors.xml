@@ -13,7 +13,6 @@
                 <field name="phone"/>
                 <field name="city"/>
                 <field name="country_id"/>
-                <field name="user_id"/>
                 <field name="image"/>
                 <templates>
                     <t t-name="kanban-box">
@@ -72,6 +71,7 @@
                             <field name="contact_job_title"/>
                         </group>
                         <group>
+			    <field name="parent_company"/>
                             <field name="street"/>
                             <field name="street2"/>
                             <field name="city"/>

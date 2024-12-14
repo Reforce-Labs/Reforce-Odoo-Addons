@@ -8,6 +8,7 @@ class Competitor(models.Model):
     name = fields.Char('Competitor Name', required=True)
     description = fields.Text('Description')
     website = fields.Char('Website')
+    parent_company = fields.Char('Parent Company')
     email = fields.Char('Email')
     phone = fields.Char('Phone')
     street = fields.Char('Street')
