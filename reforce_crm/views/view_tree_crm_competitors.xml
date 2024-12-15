@@ -59,7 +59,14 @@
                         <h1>
                             <field name="name" placeholder="Competitor Name"/>
                         </h1>
+                            <label for="revenue"/>
+                            <field name="revenue" placeholder="Annual Revenue"/>
+                            <label for="employees"/>
+                            <field name="employees" placeholder="Number of Employees"/>
+                            <label for="users"/>
+                            <field name="users" placeholder="Number of Users"/>
                     </div>
+                    <div>&#x2063;</div>
                     <group>
                         <group>
                             <field name="website" widget="url"/>

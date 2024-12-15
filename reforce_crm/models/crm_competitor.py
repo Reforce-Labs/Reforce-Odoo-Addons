@@ -7,6 +7,10 @@ class Competitor(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
     name = fields.Char('Competitor Name', required=True, tracking=True)
+    currency_id = fields.Many2one('res.currency', 'Currency', tracking=True)
+    revenue = fields.Monetary('Revenue', currency_field='currency_id', tracking=True)
+    employees = fields.Integer('Employees', tracking=True)
+    users = fields.Integer('Users', tracking=True)
     description = fields.Text('Description', tracking=True)
     website = fields.Char('Website', tracking=True)
     parent_company = fields.Char('Parent Company', tracking=True)
