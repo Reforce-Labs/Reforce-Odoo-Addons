@@ -95,6 +95,7 @@
                         </page>
                     </notebook>
                 </sheet>
+                <chatter reload_on_change="True"/>
             </form>
         </field>
     </record>
