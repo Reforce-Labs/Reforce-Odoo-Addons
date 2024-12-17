@@ -36,11 +36,13 @@ class Competitor(models.Model):
     color = fields.Integer('Color Index')
     
     # Products
-   # product_ids = fields.One2many(
-   #     'crm.product',
-   #     'name',
-   #     string='Products'
-   # )
+    product_ids = fields.One2many(
+        'crm.product',
+        'company_id',
+        string='Products',
+        domain=[('is_competitor_product', '=', True)],
+        context={'default_is_competitor_product': True}
+    )
     
     strengths = fields.Text('Strengths', tracking=True)
     weaknesses = fields.Text('Weaknesses', tracking=True)    
