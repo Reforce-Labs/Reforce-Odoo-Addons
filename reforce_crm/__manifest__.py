@@ -10,6 +10,7 @@
         'views/crm_product_views.xml',
         'views/view_tree_crm_competitors.xml',
         'views/action_reforce_crm_competitors.xml',
+        'views/action_crm_product.xml',
         'views/crm.xml',
     ]
 }

@@ -34,6 +34,13 @@ class Competitor(models.Model):
     image_url = fields.Char('Image URL')
     sequence = fields.Integer('Sequence', default=10)
     color = fields.Integer('Color Index')
-    product_line_ids = fields.One2many('crm.product', 'competitor_id', string='Products')
+    
+    # Products
+   # product_ids = fields.One2many(
+   #     'crm.product',
+   #     'name',
+   #     string='Products'
+   # )
+    
     strengths = fields.Text('Strengths', tracking=True)
     weaknesses = fields.Text('Weaknesses', tracking=True)    
